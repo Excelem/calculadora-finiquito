@@ -140,12 +140,12 @@
             // Mostrar el resultado con todos los decimales
             document.getElementById("resultado").innerHTML = `
                 <strong>${nombre}</strong>, tu finiquito es: <br>
-                Sueldo pendiente: ${sueldoPendiente.toFixed(2)} <br>
-                Aguinaldo proporcional: ${aguinaldoProporcional.toFixed(2)} <br>
-                Pago total Vacaciones: ${TotalVacaciones.toFixed(2)} <br>
-                Prima vacacional: ${TotalPrimaVacacional.toFixed(2)} <br>
-                Prima de antigüedad: ${primaAntiguedad.toFixed(2)} <br>
-                <strong>Total finiquito: ${finiquitoTotal.toFixed(2)}</strong>
+                Sueldo pendiente: ${sueldoPendiente.toLocaleString('es-MX', {minimumFractionDigits: 2, maximumFractionDigits: 2})} <br>
+                Aguinaldo proporcional: ${aguinaldoProporcional.toLocaleString('es-MX', {minimumFractionDigits: 2, maximumFractionDigits: 2})} <br>
+                Pago total Vacaciones: ${TotalVacaciones.toLocaleString('es-MX', {minimumFractionDigits: 2, maximumFractionDigits: 2})} <br>
+                Prima vacacional: ${TotalPrimaVacacional.toLocaleString('es-MX', {minimumFractionDigits: 2, maximumFractionDigits: 2})} <br>
+                Prima de antigüedad: ${primaAntiguedad.toLocaleString('es-MX', {minimumFractionDigits: 2, maximumFractionDigits: 2})} <br>
+                <strong>Total finiquito: $${finiquitoTotal.toLocaleString('es-MX', {minimumFractionDigits: 2, maximumFractionDigits: 2})}</strong><br>
             `;
         }
     </script>
